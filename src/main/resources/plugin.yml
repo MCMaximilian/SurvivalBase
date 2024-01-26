@@ -1,0 +1,5 @@
+name: SurvivalBase
+version: '${version}'
+main: com.mcmaximilian.SurvivalBase
+api-version: '1.20'
+description: This is help plugin of minecraft survival.
