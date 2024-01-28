@@ -2,6 +2,7 @@ package com.mcmaximilian;
 
 import com.mcmaximilian.BaseEvent.DeathEventListener;
 import com.mcmaximilian.BaseEvent.JoinEventListener;
+import com.mcmaximilian.Command.PositionCommand;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Bukkit;
@@ -10,6 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SurvivalBase extends JavaPlugin {
 
+    @SuppressWarnings("DataFlowIssue")
     @Override
     public void onEnable() {
 
@@ -18,6 +20,8 @@ public final class SurvivalBase extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents( new DeathEventListener() , this);
         getServer().getPluginManager().registerEvents( new JoinEventListener() , this );
+
+        getCommand("pos").setExecutor( new PositionCommand() );
 
     }
 
