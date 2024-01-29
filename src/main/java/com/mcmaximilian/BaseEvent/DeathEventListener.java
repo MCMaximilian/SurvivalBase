@@ -18,7 +18,8 @@ public class DeathEventListener implements Listener {
         int yPos = (int) deathPlayer.getY();
         int zPos = (int) deathPlayer.getZ();
         Component DeathMsg = Component.text("플레이어 " + deathPlayer.getName() +"이(가) ").color(NamedTextColor.YELLOW).decoration(TextDecoration.BOLD , true);
-        DeathMsg = DeathMsg.append( Component.text("[ " + xPos + " , " + yPos + " , " + zPos + " ]").color(NamedTextColor.AQUA).color(NamedTextColor.AQUA).decoration(TextDecoration.BOLD , true));
+        DeathMsg = DeathMsg.append( Component.text( deathPlayer.getWorld().key().key().toString() + "에 ").color(NamedTextColor.AQUA).decoration( TextDecoration.BOLD, true));
+        DeathMsg = DeathMsg.append( Component.text("[ " + xPos + " , " + yPos + " , " + zPos + " ]").color(NamedTextColor.GREEN).color(NamedTextColor.AQUA).decoration(TextDecoration.BOLD , true));
         DeathMsg = DeathMsg.append(Component.text(" 에서 사망하였습니다!").color(NamedTextColor.YELLOW).decoration(TextDecoration.BOLD , true));
         Bukkit.getServer().broadcast( DeathMsg );
     }
