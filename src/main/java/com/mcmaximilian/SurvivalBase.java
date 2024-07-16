@@ -1,7 +1,7 @@
 package com.mcmaximilian;
 
-import com.mcmaximilian.BaseEvent.DeathEventListener;
-import com.mcmaximilian.BaseEvent.JoinEventListener;
+import com.mcmaximilian.Event.DeathEventListener;
+import com.mcmaximilian.Event.JoinEventListener;
 import com.mcmaximilian.Command.PositionCommand;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;

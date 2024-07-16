@@ -1,4 +1,4 @@
-package com.mcmaximilian.BaseEvent;
+package com.mcmaximilian.Event;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;

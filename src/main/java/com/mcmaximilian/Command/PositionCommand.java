@@ -14,7 +14,7 @@ public class PositionCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        if ( sender instanceof Player player && label.equalsIgnoreCase("pos")) {
+        if ( sender instanceof Player player && label.equalsIgnoreCase("pos") ) {
 
             int xPos = (int) player.getX();
             int yPos = (int) player.getY();
